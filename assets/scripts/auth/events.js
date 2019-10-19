@@ -21,30 +21,30 @@ const onSignIn = function (event) {
     .then(ui.onSignInSuccess)
     .catch(ui.onSignInFailure)
 }
-//
-// const onSignOut = function (event) {
-//   event.preventDefault()
-//
-//   const form = event.target
-//   const formData = getFormFields(form)
-//   api.signOut(formData)
-//     .then(ui.onSignOutSuccess)
-//     .catch(ui.onSignOutFailure)
-// }
-//
-// const onChangePassword = function (event) {
-//   event.preventDefault()
-//
-//   const form = event.target
-//   const formData = getFormFields(form)
-//   api.changePassword(formData)
-//     .then(ui.onChangePasswordSuccess)
-//     .catch(ui.onChangePasswordFailure)
-// }
+
+const onSignOut = function (event) {
+  event.preventDefault()
+
+  const form = event.target
+  const formData = getFormFields(form)
+  api.signOut(formData)
+    .then(ui.onSignOutSuccess)
+    .catch(ui.onSignOutFailure)
+}
+
+const onChangePassword = function (event) {
+  event.preventDefault()
+
+  const form = event.target
+  const formData = getFormFields(form)
+  api.changePassword(formData)
+    .then(ui.onChangePasswordSuccess)
+    .catch(ui.onChangePasswordFailure)
+}
 
 module.exports = {
   onSignUp,
-  onSignIn
-  // onSignOut,
-  // onChangePassword
+  onSignIn,
+  onSignOut,
+  onChangePassword
 }

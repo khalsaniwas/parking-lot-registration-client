@@ -47,28 +47,28 @@
               <form class="px-2 py-2" id="sign-up">
                 <input class="form-control mb-2" type="email" name="credentials[email]" placeholder='Enter email...'>
                 <input class="form-control mb-2" type="password" name="credentials[password]" placeholder='Enter password'>
-                <input class="form-control mb-2" type="password" name="credentials[password]" placeholder='Confirm password'>
+                <input class="form-control mb-2" type="password" name="credentials[password_confirmation]" placeholder='Confirm password'>
                 <button class="btn btn-primary">Sign Up</button>
               </form>
             </div>
           </div>
         </li>
         <li class="nav-item dropdown change-password">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <a class="nav-link dropdown-toggle disabled" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Change Password
           </a>
           <div class="dropdown">
             <div class="dropdown-menu p-4 dropdown-menu-right">
               <form class="px-2 py-2" id="change-password">
-                <input class="form-control mb-2" type="password" name="credentials[password]" placeholder='Enter old password'>
-                <input class="form-control mb-2" type="password" name="credentials[password]" placeholder='Enter new password'>
+                <input class="form-control mb-2" type="password" name="passwords[old]" placeholder='Enter old password'>
+                <input class="form-control mb-2" type="password" name="passwords[new]" placeholder='Enter new password'>
                 <button class="btn btn-primary">Change Password</button>
               </form>
             </div>
           </div>
         </li>
         <li class="nav-item dropdown sign-out">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <a class="nav-link dropdown-toggle disabled" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Sign Out
           </a>
           <div class="dropdown">
