@@ -1,1 +1,28 @@
 @import '~bootstrap/scss/bootstrap';
+
+// body {
+//   background-image: url('assets/images/parking-lot.jpeg');
+//
+// }
+
+.logoimg {
+  height: 60px;
+  width: 60px;
+
+}
+
+form {
+   width: 250px;
+   position: relative;
+ }
+
+ .navbar-dark .navbar-brand {
+     color: #fff;
+     padding: 1.1rem;
+     background-color: white;
+     border-radius: 50%;
+ }
+
+ .navbar {
+   position: relative;
+ }
