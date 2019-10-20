@@ -5,7 +5,7 @@
 Vehicle registration User stories
 * [x] As a user, I want to get home page with logo, so that i can see welcome text.
 * [ ] As a signed in user, I want to see my vehicle listing, so that I can see them all in one place.
-* [ ] As a signed in user, I want to add my vehicle, so that I can register it.
+* [x] As a signed in user, I want to add my vehicle, so that I can register it.
 * [ ] As a signed in user, I want to edit my vehicle, so that I can change vehicle information.
 * [ ] As a signed in user, I want to delete my vehicle.
 
@@ -27,6 +27,9 @@ user signup stories
 * [x] As a user, I want to disable signup and sign-in button after sign-in
 * [x] As a user, I want to activate sign-up and sign-in after sign-out and disable change-password and sign-out button.
 
+## Wire frame
+
+![wireframe diagram](./img/wireframe.jpg)
 
 ## Tasks
 
