@@ -24,17 +24,18 @@ const getMyVehicle = function () {
   })
 }
 
-// const EditVehicle = function () {
-//   return $.ajax({
-//     method: 'GET',
-//     url: config.apiUrl + '/vehicles',
-//     headers: {
-//       Authorization: `Token token=${store.user.token}`
-//     }
-//   })
-// }
+const deleteVehicle = function (formData) {
+  return $.ajax({
+    method: 'DELETE',
+    url: `${config.apiUrl}/vehicles/${formData.id}`,
+    headers: {
+      Authorization: `Token token=${store.user.token}`
+    }
+  })
+}
 
 module.exports = {
     addVehicle,
-    getMyVehicle
+    getMyVehicle,
+    deleteVehicle
 }

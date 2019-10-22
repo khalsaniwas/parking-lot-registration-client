@@ -32,15 +32,24 @@ const onGetMyVehicleSuccess = (data) => {
   successMessage('Below is the list of all vehicles')
 }
 
+const onDeleteVehicleSuccess = function () {
+  successMessage('Vehicle deleted successfully')
+}
+
 const onGetMyVehicleFailure = function () {
   failureMessage('Failed to display list')
 }
 
+const onDeleteVehicleFailure = function () {
+  successMessage('Failed to delete vehicle')
+}
 
 
 module.exports = {
   onAddVehicleSuccess,
   onAddVehicleFailure,
   onGetMyVehicleSuccess,
+  onDeleteVehicleSuccess,
+  onDeleteVehicleFailure,
   onGetMyVehicleFailure
 }

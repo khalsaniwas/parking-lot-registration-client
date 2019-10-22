@@ -4,10 +4,10 @@
 
 Vehicle registration User stories
 * [x] As a user, I want to get home page with logo, so that i can see welcome text.
-* [ ] As a signed in user, I want to see my vehicle listing, so that I can see them all in one place.
+* [X] As a signed in user, I want to see my vehicle listing, so that I can see them all in one place.
 * [x] As a signed in user, I want to add my vehicle, so that I can register it.
 * [ ] As a signed in user, I want to edit my vehicle, so that I can change vehicle information.
-* [ ] As a signed in user, I want to delete my vehicle.
+* [X] As a signed in user, I want to delete my vehicle.
 
 user signup stories
 * [x] As a user, I want to click on sign-up button, so that i can sign-up with email, password, name, mobile phone number.

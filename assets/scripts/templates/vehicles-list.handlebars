@@ -33,9 +33,12 @@
       {{vehicle.user.id}}
       </td>
 
-      <td><button id="edit-vehicle">Edit</button></td>
-
-      <td><button id="delete-vehicle">Delete</button></td>
+      <td>
+        <form class="delete-vehicle">
+          <input type="hidden" name="id" value="{{vehicle.id}}">
+          <button>Delete</button>
+        </form>
+      </td>
 
   </tr>
 
