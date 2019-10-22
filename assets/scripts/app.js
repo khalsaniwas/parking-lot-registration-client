@@ -17,4 +17,8 @@ $(() => {
 
   // Vehicle events
   $('#add-vehicle').on('submit', vehicleEvents.onAddVehicle)
+
+  // Get my vehicle list
+  $('#list-vehicle button').on('click', vehicleEvents.onGetMyVehicle)
+
 })

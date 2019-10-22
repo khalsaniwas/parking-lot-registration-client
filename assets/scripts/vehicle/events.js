@@ -12,6 +12,15 @@ const onAddVehicle = function (event) {
     .catch(ui.onAddVehicleFailure)
 }
 
+const onGetMyVehicle = function (event) {
+  event.preventDefault()
+  api.getMyVehicle()
+    .then(ui.onGetMyVehicleSuccess)
+    .catch(ui.onGetMyVehicleFailure)
+}
+
+
 module.exports = {
-  onAddVehicle
+  onAddVehicle,
+  onGetMyVehicle
 }
