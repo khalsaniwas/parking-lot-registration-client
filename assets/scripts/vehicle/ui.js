@@ -29,10 +29,15 @@ const onGetMyVehicleSuccess = (data) => {
   store.vehicles = data.vehicles
   const showVehiclesHtml = showVehiclesTemplate({ vehicles: data.vehicles })
   $('#my-table').html(showVehiclesHtml)
+  successMessage('Below is the list of all vehicles')
 }
 
 const onDeleteVehicleSuccess = function () {
   successMessage('Vehicle deleted successfully')
+}
+
+const onGetMyVehicleFailure = function () {
+  failureMessage('Failed to display list')
 }
 
 const onDeleteVehicleFailure = function () {
@@ -45,5 +50,6 @@ module.exports = {
   onAddVehicleFailure,
   onGetMyVehicleSuccess,
   onDeleteVehicleSuccess,
-  onDeleteVehicleFailure
+  onDeleteVehicleFailure,
+  onGetMyVehicleFailure
 }
