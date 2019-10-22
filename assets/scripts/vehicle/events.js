@@ -29,10 +29,19 @@ const onDeleteVehicle = function (event) {
     .catch(ui.onDeleteVehicleFailure)
 }
 
+const onEditVehicle = function (event) {
+  event.preventDefault()
+  const form = event.target
+  const formData = getFormFields(form)
+  api.editVehicle(formData)
+    .then(ui.onEditVehicleSuccess)
+    .catch(ui.onEditVehicleFailure)
+}
 
 
 module.exports = {
   onAddVehicle,
   onGetMyVehicle,
-  onDeleteVehicle
+  onDeleteVehicle,
+  onEditVehicle
 }

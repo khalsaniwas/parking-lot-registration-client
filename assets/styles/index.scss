@@ -2,7 +2,7 @@
 #content {
   background-image: url('assets/images/parking-lot.jpeg');
   width: 100%;
-  height: 600px;
+  height: 500px;
 
 }
 
@@ -11,7 +11,7 @@
   width: 60px;
 }
 
-#sign-in, #sign-up, #change-password, #sign-out {
+#sign-in, #sign-up, #change-password, #sign-out, #edit {
   width: 250px;
   position: relative;
 }
@@ -27,8 +27,8 @@
   position: relative;
 }
 
-#welcome-message {
-  font-size: 40px;
+span {
+  font-size: 35px;
   color: rgb(211, 128, 19);
 }
 
@@ -40,16 +40,26 @@ table, td, th, tr {
 
 table {
   margin: auto;
+
   
 }
 
 .vehicle-form {
   color: rgb(211, 128, 19);
   padding: 5px;
+  text-align: center;
 }
 
 .vehicle-form input {
   margin: 3px;
   border: solid orange;
   opacity: 0.5;
+}
+
+.alert {
+  text-align: center;
+}
+
+#list-vehicle {
+  text-align: center;
 }

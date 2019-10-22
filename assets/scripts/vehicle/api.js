@@ -34,8 +34,20 @@ const deleteVehicle = function (formData) {
   })
 }
 
+const editVehicle = function (formData) {
+  return $.ajax({
+    method: 'PATCH',
+    url: `${config.apiUrl}/vehicles/${formData.id}`,
+    data: formData,
+    headers: {
+      Authorization: `Token token=${store.user.token}`
+    }
+  })
+}
+
 module.exports = {
     addVehicle,
     getMyVehicle,
-    deleteVehicle
+    deleteVehicle,
+    editVehicle
 }

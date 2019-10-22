@@ -1,4 +1,30 @@
-## Parking Lot Registration
+# Parking Lot Registration - client
+
+
+
+
+## Link to deployed sites
+
+### Production site link:
+### Development site link:
+
+## parking-lot-registration (backend api)
+
+### Link:
+
+### Description:
+
+## Technologies used
+
+## Unsolved problems
+
+## Wire frame
+
+![wireframe diagram](./img/wireframe.jpg)
+
+## Planning
+
+## Development story
 
 ## User Stories
 
@@ -6,7 +32,7 @@ Vehicle registration User stories
 * [x] As a user, I want to get home page with logo, so that i can see welcome text.
 * [X] As a signed in user, I want to see my vehicle listing, so that I can see them all in one place.
 * [x] As a signed in user, I want to add my vehicle, so that I can register it.
-* [ ] As a signed in user, I want to edit my vehicle, so that I can change vehicle information.
+* [ ] As a signed in user, I want to edit my vehicle, so that I can update vehicle information.
 * [X] As a signed in user, I want to delete my vehicle.
 
 user signup stories
@@ -27,9 +53,6 @@ user signup stories
 * [x] As a user, I want to disable signup and sign-in button after sign-in
 * [x] As a user, I want to activate sign-up and sign-in after sign-out and disable change-password and sign-out button.
 
-## Wire frame
-
-![wireframe diagram](./img/wireframe.jpg)
 
 ## Tasks
 
@@ -43,11 +66,6 @@ Developers should run these often!
     them
 - `grunt deploy`: builds and deploys master branch
 
-
-## Additional Resources
-
-- [Modern Javascript Explained for Dinosaurs](https://medium.com/@peterxjang/modern-javascript-explained-for-dinosaurs-f695e9747b70)
-- [Making Sense of Front End Build Tools](https://medium.freecodecamp.org/making-sense-of-front-end-build-tools-3a1b3a87043b)
 
 ## [License](LICENSE)
 

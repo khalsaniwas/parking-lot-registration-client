@@ -15,13 +15,15 @@ $(() => {
   $('#sign-out').on('submit', authEvents.onSignOut)
   $('#change-password').on('submit', authEvents.onChangePassword)
 
-  // Vehicle events
+  // Create new vehicle
   $('#add-vehicle').on('submit', vehicleEvents.onAddVehicle)
 
   // Get my vehicle list
   $('#list-vehicle button').on('click', vehicleEvents.onGetMyVehicle)
 
-  // Delete my vehicles
-  $(document.body).on('submit', '.delete-vehicle', vehicleEvents.onDeleteVehicle)
+  // Delete my vehicle
+  $('#my-table').on('submit', '.delete-vehicle', vehicleEvents.onDeleteVehicle)
 
+  // Edit my vehicle
+  $('#my-table').on('submit', '.edit-vehicle', vehicleEvents.onEditVehicle)
 })

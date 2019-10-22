@@ -5,6 +5,8 @@
     <th>Plate number</th>
     <th>User email</th>
     <th>User id</th>
+    <th>Edit</th>
+    <th>Delete</th>
   </tr>
 {{#each vehicles as |vehicle|}}
   
@@ -31,6 +33,25 @@
 
       <td>
       {{vehicle.user.id}}
+      </td>
+
+      <td>
+      <div class="nav-item dropdown edit">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Edit
+          </a>
+          <div class="dropdown">
+            <div class="dropdown-menu p-4 dropdown-menu-right">
+              <form class="px-2 py-2 edit-vehicle" id="edit">
+                <input type="hidden" name="id" value="{{vehicle.id}}">
+                <input class="form-control mb-2" type="text" name="vehicle[make]" value="{{vehicle.make}}" placeholder='Vehicle make..'>
+                <input class="form-control mb-2" type="text" name="vehicle[model]" value="{{vehicle.model}}" placeholder='Vehicle model..'>
+                <input class="form-control mb-2" type="text" name="vehicle[registration_plate_number]" value="{{registration_plate_number}}" placeholder='Plate number..'>
+                <button class="btn btn-primary">Submit</button>
+              </form>
+            </div>
+          </div>
+        </div>
       </td>
 
       <td>
