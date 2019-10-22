@@ -31,11 +31,19 @@ const onGetMyVehicleSuccess = (data) => {
   $('#my-table').html(showVehiclesHtml)
 }
 
+const onDeleteVehicleSuccess = function () {
+  successMessage('Vehicle deleted successfully')
+}
 
+const onDeleteVehicleFailure = function () {
+  successMessage('Failed to delete vehicle')
+}
 
 
 module.exports = {
   onAddVehicleSuccess,
   onAddVehicleFailure,
-  onGetMyVehicleSuccess
+  onGetMyVehicleSuccess,
+  onDeleteVehicleSuccess,
+  onDeleteVehicleFailure
 }

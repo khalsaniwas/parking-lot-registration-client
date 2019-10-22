@@ -21,4 +21,7 @@ $(() => {
   // Get my vehicle list
   $('#list-vehicle button').on('click', vehicleEvents.onGetMyVehicle)
 
+  // Delete my vehicles
+  $(document.body).on('submit', '.delete-vehicle', vehicleEvents.onDeleteVehicle)
+
 })
