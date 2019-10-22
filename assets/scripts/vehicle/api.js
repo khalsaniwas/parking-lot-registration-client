@@ -9,11 +9,32 @@ const addVehicle = function (formData) {
     url: config.apiUrl + '/vehicles',
     data: formData,
     headers: {
-        Authorization: `Token token=${store.user.token}`
-      }
+      Authorization: `Token token=${store.user.token}`
+    }
   })
 }
 
+const getMyVehicle = function () {
+  return $.ajax({
+    method: 'GET',
+    url: config.apiUrl + '/vehicles',
+    headers: {
+      Authorization: `Token token=${store.user.token}`
+    }
+  })
+}
+
+// const EditVehicle = function () {
+//   return $.ajax({
+//     method: 'GET',
+//     url: config.apiUrl + '/vehicles',
+//     headers: {
+//       Authorization: `Token token=${store.user.token}`
+//     }
+//   })
+// }
+
 module.exports = {
-    addVehicle
+    addVehicle,
+    getMyVehicle
 }

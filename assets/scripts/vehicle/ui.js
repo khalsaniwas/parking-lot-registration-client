@@ -1,6 +1,7 @@
 'use strict'
 
 const store = require('../store')
+const showVehiclesTemplate = require('../templates/vehicles-list.handlebars')
 
 const successMessage = function (newText) {
   $('#message').text(newText)
@@ -24,8 +25,17 @@ const onAddVehicleFailure = function () {
   $('#add-vehicle').trigger('reset')
 }
 
+const onGetMyVehicleSuccess = (data) => {
+  store.vehicles = data.vehicles
+  const showVehiclesHtml = showVehiclesTemplate({ vehicles: data.vehicles })
+  $('#my-table').html(showVehiclesHtml)
+}
+
+
+
 
 module.exports = {
   onAddVehicleSuccess,
-  onAddVehicleFailure
+  onAddVehicleFailure,
+  onGetMyVehicleSuccess
 }

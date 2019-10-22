@@ -35,6 +35,13 @@ const onSignInSuccess = function (formData) {
   $('.sign-in .dropdown-menu').removeClass('show')
   $('.sign-in .nav-link').addClass('disabled')
   $('.sign-up .nav-link').addClass('disabled')
+
+  // Show content on homepage after sign in
+  $('.hide-homepage').removeClass('d-none')
+
+  // Hide welcome message after sign in
+  $('#welcome-message').addClass('d-none')
+  
 }
 
 const onSignInFailure = function () {
@@ -55,6 +62,12 @@ const onSignOutSuccess = function () {
   // Close sign-out box
   $('.sign-out').removeClass('show')
   $('.sign-out .dropdown-menu').removeClass('show')
+
+  // Hide content on homepage after sign out
+  $('.hide-homepage').addClass('d-none')
+
+  // Show welcome message after sign out
+  $('#welcome-message').removeClass('d-none')
 }
 
 const onSignOutFailure = function () {
