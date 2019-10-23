@@ -1,18 +1,39 @@
-# Parking Lot Registration - client
+# Parking Lot Registration - client 
 
+### Repository link: https://github.com/khalsaniwas/parking-lot-registration-client
 
+### Description
 
+This is a user interface where users can interact to sign-up and create accounts and register their vehicles. Users can interact with application through input forms and button. Users can add and edit their vehicles with clicks. Data is sent back to backend application through api and gets stored in database. Users can create, delete, update and get vehicles.
+
+## parking-lot-registration (backend api)
+
+### Repository link: https://github.com/khalsaniwas/parking-lot-registration
 
 ## Link to deployed sites
 
 ### Production site link:
 ### Development site link:
 
-## parking-lot-registration (backend api)
+## Technologies used
 
-### Link:
+Github
+Atom
+Bootstrap
+Handlebars
+javascript
+visual studio code
+Terminal
+web browser
+dev tool
+css
+html
+ajax
+jquery
 
-### Description:
+
+
+
 
 ## Technologies used
 
