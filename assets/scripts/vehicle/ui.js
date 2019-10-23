@@ -47,7 +47,6 @@ const onDeleteVehicleFailure = function () {
 }
 
 const onEditVehicleSuccess = function (data) {
-  console.log("hello", data)
   successMessage('Vehicle edited successfully')
 
   api.getMyVehicle()
