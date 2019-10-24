@@ -12,8 +12,9 @@ This is a user interface where users can interact to sign-up and create accounts
 
 ## Link to deployed sites
 
-### Production site link:
-### Development site link:
+### Production site link: https://khalsaniwas.github.io/parking-lot-registration-client/
+
+### Development site link: http://localhost:7165/
 
 ## Technologies used
 
@@ -31,11 +32,6 @@ html
 ajax
 jquery
 
-
-
-
-
-## Technologies used
 
 ## Unsolved problems
 
