@@ -37,7 +37,7 @@
 
       <td>
       <div class="nav-item dropdown edit">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <a class="dropdown-toggle btn btn-light btn-sm" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Edit
           </a>
           <div class="dropdown">
@@ -47,7 +47,7 @@
                 <input class="form-control mb-2" type="text" name="vehicle[make]" value="{{vehicle.make}}" placeholder='Vehicle make..'>
                 <input class="form-control mb-2" type="text" name="vehicle[model]" value="{{vehicle.model}}" placeholder='Vehicle model..'>
                 <input class="form-control mb-2" type="text" name="vehicle[registration_plate_number]" value="{{registration_plate_number}}" placeholder='Plate number..'>
-                <button class="btn btn-primary">Submit</button>
+                <button class="btn btn-dark btn-sm">Submit</button>
               </form>
             </div>
           </div>
@@ -57,7 +57,7 @@
       <td>
         <form class="delete-vehicle">
           <input type="hidden" name="id" value="{{vehicle.id}}">
-          <button>Delete</button>
+          <button class="btn btn-light btn-sm">Delete</button>
         </form>
       </td>
 

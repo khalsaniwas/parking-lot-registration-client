@@ -33,13 +33,14 @@ span {
 }
 
 table, td, th, tr {
-  border: 1px solid rgb(211, 207, 192);
-  color: rgb(211, 128, 19);
+  border: 2px solid rgb(128, 125, 125);
+  color: rgb(206, 200, 200);
   text-align: center;
 }
 
 table {
   margin: auto;
+  background-color: black;
 
   
 }
@@ -52,8 +53,7 @@ table {
 
 .vehicle-form input {
   margin: 3px;
-  border: solid orange;
-  opacity: 0.5;
+  border: solid rgb(128, 125, 125);
 }
 
 .alert {
