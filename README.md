@@ -32,16 +32,26 @@ html
 ajax
 jquery
 
-
-## Unsolved problems
-
 ## Wire frame
 
 ![wireframe diagram](./img/wireframe.jpg)
 
 ## Planning
 
+I planned according to my wireframes to show how each screen will look like when user is signed up and signed in, then hide these buttons and show only change password and sign in buttons. 
+I wanted an easy way to display a list of vehicles to the current user and planned to display data in from of tables, where user can edit and delete the rows just by clicking the buttons.
+
 ## Development story
+
+when I started implementing the rules for authentication part, I came up with the idea of having all four buttons on top bar and disable change password, sign out button for new user. Once signed up and signed in, change password and sign out buttons become active. I used bootstrap to display all buttons on top bar and drop down classes from bootstrap to make the buttons show dropdown form fields when user clicks on them. That way It looks lot cleaner and saves space on screen. I used remove class on those form fields so that once user click on submit button the form close by itself without hovering out of form fields window and click somewhere else, I feel that is great user experience to have.
+I added form fields on signed in screen so that user can add information about his vehicle and can complete the registration with click of button. For that I created another button called Add Vehicle. Once user has register vehicles, I added another button named "Vehicle list" to get the list of vehicles that user has registered. To get that information in efficent and faster way, I used handlebars. Implementing handlebars was not an easy task. Handlebars made it very easy for me to pull and display information in form of table. I used edit and delete buttons with handlebars to display them in each row of registered vehicle to make it easier for user to edit and delete their vehicle. This is also a great user experience.
+Third great user experienc is to give user his current information in the formfields while updating vehicle information so that user do not have to enter formfield again. This way users can edit the field that they want to and can press submit button to save changes.
+
+## Unsolved problems
+
+I will work on to make the interface more interactive for user, adding drop down lists to the form fields for vehicle make and model selection.
+I will add more colums for saving user's name and telephone number.
+
 
 ## User Stories
 
@@ -49,7 +59,7 @@ Vehicle registration User stories
 * [x] As a user, I want to get home page with logo, so that i can see welcome text.
 * [X] As a signed in user, I want to see my vehicle listing, so that I can see them all in one place.
 * [x] As a signed in user, I want to add my vehicle, so that I can register it.
-* [ ] As a signed in user, I want to edit my vehicle, so that I can update vehicle information.
+* [x] As a signed in user, I want to edit my vehicle, so that I can update vehicle information.
 * [X] As a signed in user, I want to delete my vehicle.
 
 user signup stories
