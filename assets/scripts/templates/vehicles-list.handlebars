@@ -1,17 +1,17 @@
 <tr>
-    <th>Vehicle id</th>
+    <th class="vehicle-id">Id</th>
     <th>Make</th>
     <th>Model</th>
-    <th>Plate number</th>
-    <th>User email</th>
-    <th>User id</th>
+    <th>Plate #</th>
+    <th class="user-email">User email</th>
+    <th class="user-id">User id</th>
     <th>Edit</th>
     <th>Delete</th>
   </tr>
 {{#each vehicles as |vehicle|}}
   
   <tr data-id="{{vehicle.id}}">
-      <td>
+      <td class="vehicle-id">
       {{vehicle.id}}
       </td>
 
@@ -27,11 +27,11 @@
       {{vehicle.registration_plate_number}}
       </td>
 
-      <td>
+      <td class="user-email">
       {{vehicle.user.email}}
       </td>
 
-      <td>
+      <td class="user-id">
       {{vehicle.user.id}}
       </td>
 
