@@ -67,6 +67,10 @@ const onSignOutSuccess = function () {
 
   // Show welcome message after sign out
   $('#welcome-message').removeClass('d-none')
+
+  // hide the user data so that next signed in 
+  // user cannot see previous user data
+  $('#my-table').addClass('d-none')
 }
 
 const onSignOutFailure = function () {

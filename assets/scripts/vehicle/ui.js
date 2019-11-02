@@ -30,6 +30,7 @@ const onGetMyVehicleSuccess = (data) => {
   store.vehicles = data.vehicles
   const showVehiclesHtml = showVehiclesTemplate({ vehicles: data.vehicles })
   $('#my-table').html(showVehiclesHtml)
+  $('#my-table').removeClass('d-none')
   successMessage('Below is the list of all vehicles')
 }
 
