@@ -2,8 +2,7 @@
 
 const store = require('../store')
 const showVehiclesTemplate = require('../templates/vehicles-list.handlebars')
-const vehicleEvents = require('./events.js')
-const api = require('./api.js')
+
 
 const successMessage = function (newText) {
   $('#message').text(newText)
@@ -48,10 +47,9 @@ const onDeleteVehicleFailure = function () {
 
 const onEditVehicleSuccess = function (data) {
   successMessage('Vehicle edited successfully')
-
-  api.getMyVehicle()
-    .then(onGetMyVehicleSuccess)
-    .catch(onGetMyVehicleFailure)
+  $('#list-vehicle button').trigger('click')
+  $('.edit').removeClass('show')
+  $('.edit .dropdown-menu').removeClass('show')
 }
 
 const onEditVehicleFailure = function () {

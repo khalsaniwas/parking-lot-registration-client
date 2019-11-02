@@ -41,7 +41,6 @@ const onSignInSuccess = function (formData) {
 
   // Hide welcome message after sign in
   $('#welcome-message').addClass('d-none')
-  
 }
 
 const onSignInFailure = function () {

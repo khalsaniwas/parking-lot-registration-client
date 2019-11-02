@@ -15,10 +15,9 @@ const onAddVehicle = function (event) {
 const onGetMyVehicle = function (event) {
   event.preventDefault()
   api.getMyVehicle()
-    .then(ui.onGetMyVehicleSuccess)
-    .catch(ui.onGetMyVehicleFailure)
+  .then(ui.onGetMyVehicleSuccess)
+  .catch(ui.onGetMyVehicleFailure)
 }
-
 
 const onDeleteVehicle = function (event) {
   event.preventDefault()
@@ -37,7 +36,6 @@ const onEditVehicle = function (event) {
     .then(ui.onEditVehicleSuccess)
     .catch(ui.onEditVehicleFailure)
 }
-
 
 module.exports = {
   onAddVehicle,
